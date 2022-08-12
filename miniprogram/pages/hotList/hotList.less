@@ -1,0 +1,80 @@
+/* pages/hotList/hotList.wxss */
+
+.hostlist {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.top-img {
+    .top-cover {
+        display: inherit;
+        width: 100%;
+    }
+}
+
+.tip {
+    background-color: rgb(245, 245, 245);
+    height: 45rpx;
+    line-height: 45rpx;
+    font-size: 25rpx;
+    color: #ababab;
+    padding-left: 10px;
+}
+
+.sp-item {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.index-box {
+    width: 8%;
+}
+
+.title-content {
+    width: 76%;
+    display: flex;
+}
+
+.icon-box {
+    width: 16%;
+
+    .icon {
+        margin-right: 10rpx;
+    }
+}
+
+.news-list {
+    overflow: hidden;
+
+    .item {
+        padding: 8px 0;
+        border-bottom: 1px solid #dddddd;
+        display: flex;
+
+        &:nth-child(-n+3) .num {
+            font-size: 6vw;
+            color: red;
+        }
+    }
+
+    .list-layout {
+        align-items: center;
+        display: flex;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 38rpx;
+    }
+
+    .num {
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+        color: #ababab;
+    }
+}

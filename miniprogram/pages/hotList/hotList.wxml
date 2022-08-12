@@ -1,0 +1,34 @@
+<!--pages/hotList/hotList.wxml-->
+<view class="hotList">
+    <!-- 搜索框 -->
+    <search></search>
+    <view class="top-img">
+        <image src="/public/img/hotList/hotListTop.jpg" mode="widthFix" class="top-cover"></image>
+    </view>
+    <view class="tip">每10分钟更新一次</view>
+    <view class="news-list">
+        <scroll-view scroll-y="true" class="scroll-Y" style="height: 100%;">
+            <view class="item" wx:for="{{newsList}}" wx:key="index">
+                <view class="index-box list-layout">
+                    <view class="sp-item num">
+                        <span>{{index}}</span>
+                    </view>
+                </view>
+                <view class="title-content list-layout">
+                    <view class="sp-item title-box">
+                        <span class="title">{{item.title}}</span>
+                    </view>
+                </view>
+                <view class="icon-box list-layout" style="text-align: right;">
+                    <view class="sp-item" wx:if="{{item.status=='hot'}}">
+                        <image src="/public/img/hotList/remen.svg" style="width: 32rpx;height: 32rpx;" mode="widthFix"></image>
+                    </view>
+                    <view class="sp-item">
+                        <mp-icon class="icon" icon="arrow" size="{{15}}"></mp-icon>
+                    </view>
+                </view>
+            </view>
+            <!-- <uni-load-more iconType="circle" :status="status" /> -->
+        </scroll-view>
+    </view>
+</view>

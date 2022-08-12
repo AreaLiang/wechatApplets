@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "history":"../history/history"
+    },
+    "navigationBarTitleText":""
+}

@@ -1,0 +1,29 @@
+<!--component/regularShowTemplate/regularShowTemplate.wxml-->
+<view class="wrap" wx:for="{{list}}">
+    <view class="info">
+        <view class="portrait">
+            <image class="p_img" src="{{item.portraitUrl}}"></image>
+        </view>
+        <view class="text-describe">
+            <p class="name">{{item.name}}</p>
+            <p class="date" style="color: rgb(122, 122, 122);">{{item.date}}</p>
+        </view>
+    </view>
+    <view class="center-content" wx:if="{{item.listType=='article'}}">
+        <view class="text">{{item.content}}</view>
+        <view class="cover">
+            <image class="cover-img" src="{{item.coverUrl}}"></image>
+        </view>
+    </view>
+
+    <view class="video" wx:if="{{item.listType=='video'}}">
+        <view class="text">{{item.content}}</view>
+        <view class="video">
+            <image class="cover-img" src="{{item.coverUrl}}"></image>
+            <image src="/public/img/start.png" class="start-img"></image>
+        </view>
+    </view>
+
+    <!-- 底部互动栏 -->
+    <interactive></interactive>
+</view>

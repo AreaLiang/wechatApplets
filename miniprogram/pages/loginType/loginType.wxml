@@ -1,0 +1,7 @@
+<!--pages/loginType/loginType.wxml-->
+<view class="loginType">
+    <view class="op-box">
+        <button type="primary" bindtap="weChatLogin">微信登录</button>
+        <button class="blue" bindtap="accoundLogin">Area账号登录</button>
+    </view>
+</view>

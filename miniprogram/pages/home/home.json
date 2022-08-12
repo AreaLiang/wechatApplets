@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "search":"/component/search/search"
+    },
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText":"首页"
+}

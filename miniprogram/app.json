@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/user/combinePages/combinePages",
+        "pages/user/notification/notification",
+        "pages/user/follow/follow",
+        "pages/user/user",
+        "pages/hotList/hotList",
+        "pages/home/home",
+        "pages/login/index",
+        "pages/loginType/loginType",
+        "pages/video/video"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "useExtendedLib": {
+        "weui": true
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "selectedIconPath": "public/navIcon/Home-active.png",
+                "iconPath": "public/navIcon/Home.png",
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "public/navIcon/video-active.png",
+                "iconPath": "public/navIcon/video.png",
+                "pagePath": "pages/login/index",
+                "text": "视频"
+            },
+            {
+                "selectedIconPath": "public/navIcon/Hot-active.png",
+                "iconPath": "public/navIcon/Hot.png",
+                "pagePath": "pages/hotList/hotList",
+                "text": "热榜"
+            },
+            {
+                "selectedIconPath": "public/navIcon/user-active.png",
+                "iconPath": "public/navIcon/user.png",
+                "pagePath": "pages/user/user",
+                "text": "个人"
+            }
+        ]
+    }
+}

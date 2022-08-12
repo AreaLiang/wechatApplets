@@ -1,0 +1,27 @@
+/* component/interactive/interactive.wxss */
+.mutual-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+    .item{
+        flex-direction: column;
+        padding: 10px 0;
+        align-items: center;
+        view{
+            display: inline-block;
+            margin: 0 5px;
+        }
+        &:nth-child(1){
+            .iconfont{
+                font-weight: 600;
+            }
+        }
+        .icon{
+            vertical-align: text-bottom;
+        }
+    }
+}
+.red{
+    color: #d90707;
+}

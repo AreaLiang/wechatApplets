@@ -1,0 +1,11 @@
+<!--pages/user/combinePages/combinePages.wxml-->
+<view class="title-list">
+    <view class="title-item" wx:for="{{titleList}}" wx:key="index">
+        <navigator url="#">
+            <span class="{{actIndex==index ? 'active':'' }}">{{item.name}}</span>
+        </navigator>
+    </view>
+</view>
+<view class="main">
+   <history></history>
+</view>

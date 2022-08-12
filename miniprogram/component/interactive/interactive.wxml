@@ -1,0 +1,22 @@
+<!--component/interactive/interactive.wxml-->
+<!-- 互动组件 点赞，评论，转发显示-->
+<view class="mutual-box">
+    <view class="item">
+        <view>
+            <mp-icon class="icon" icon="previous" size="{{20}}"></mp-icon>
+        </view>
+        <view>{{repost}}</view>
+    </view>
+    <view class="item">
+        <view>
+            <mp-icon class="icon" icon="comment" size="{{20}}"></mp-icon>
+        </view>
+        <view>{{comment}}</view>
+    </view>
+    <view class="item">
+        <view>
+            <mp-icon class="icon" icon="like" size="{{20}}"></mp-icon>
+        </view>
+        <view>{{like}}</view>
+    </view>
+</view>

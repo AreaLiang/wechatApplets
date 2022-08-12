@@ -1,0 +1,22 @@
+<!--pages/user/follow/follow.wxml-->
+<view class="follow">
+    <view class="list" wx:for="{{followList}}">
+        <view>
+            <view class="user-info">
+                <view class="portrait">
+                    <image src="{{item.portraitUrl}}" class="p_img"></image>
+                </view>
+                <view class="info">
+                    <p class="mr name">{{item.name}}</p>
+                    <uni-icons custom-prefix="iconfont" class="mr" type="icon-dianzan" size="5vw" color="black" />
+                    <p class="mr">粉丝数: {{item.fans}}</p>
+                </view>
+            </view>
+        </view>
+        <view>
+            <view class="status">
+                <p>已关注</p>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+<!--pages/user/notification/notification.wxml-->
+<view class="notification">
+    <view class="list" wx:for="{{messageList}}">
+        <view>
+            <view class="user-info">
+
+                <block wx:if="{{item.type!='notice'}}">
+                    <view class="portrait">
+                        <image src="{{item.portraitUrl}}" class="p_img"></image>
+                    </view>
+                    <view class="info">
+                        <p class="mr name">{{item.name}}</p>
+                        <uni-icons custom-prefix="iconfont" class="mr" type="icon-dianzan" size="5vw" color="black" />
+                        <p class="mr">{{item.data}}</p>
+                        <p class="like">还有{{item.likeNumber}}个人点赞></p>
+                    </view>
+                </block>
+
+                <block wx:if="{{item.type=='notice'}}">
+                    <view class="portrait">
+                        <image src="{{item.portraitUrl}}" class="p_img"></image>
+                    </view>
+                    <view class="info">
+                        <p class="mr name">{{item.tip}}</p>
+                        <p class="mr">{{item.data}}</p>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view>
+            <view class="comment" wx:if="{{item.type!='notice'}}">
+                <p>[我的评论]{{item.comment}}</p>
+            </view>
+        </view>
+    </view>
+</view>

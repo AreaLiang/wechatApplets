@@ -1,0 +1,30 @@
+<!--pages/login/index.wxml-->
+<view class="login">
+    <view class="title">
+        <view class="tip">登录表示同意“<navigator class="a_link" url="#">用户协议</navigator>”和“<navigator class="a_link" url="#">隐私政策</navigator>”</view>
+    </view>
+    <view class="login-form">
+        <mp-form id="form" rules="{{rules}}" models="{{userFormData}}">
+            <view class="input-box">
+                <view class="account-box">
+                    <view class="weui-cell weui-cell_input customize">
+                        <mp-icon class="icon" type="field" icon="me" size="{{20}}"></mp-icon>
+                        <input class="weui-input" maxlength="10" placeholder="输入账号" />
+                    </view>
+                </view>
+            </view>
+            <view class="input-box">
+                <view class="password-box">
+                    <view class="weui-cell weui-cell_input customize">
+                        <mp-icon class="icon" type="field" icon="lock" size="{{20}}"></mp-icon>
+                        <input class="weui-input" maxlength="10" placeholder="输入密码" />
+                    </view>
+                </view>
+            </view>
+        </mp-form>
+    </view>
+    <view class="login-btn">
+        <button type="primary">登录</button>
+    </view>
+
+</view>

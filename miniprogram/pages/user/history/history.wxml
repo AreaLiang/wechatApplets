@@ -1,0 +1,2 @@
+<!--pages/user/history/history.wxml-->
+<regularShowTemplate list="{{list}}" ></regularShowTemplate>

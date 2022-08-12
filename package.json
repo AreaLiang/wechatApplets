@@ -1,0 +1,14 @@
+{
+  "name": "qs",
+  "version": "5.2.1",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "qs": "^6.11.0"
+  },
+  "description": ""
+}

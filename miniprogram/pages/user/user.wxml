@@ -1,0 +1,58 @@
+<!--pages/user/user.wxml-->
+<view class="userPage">
+    <view class="logged-box login-status">
+        <view>
+            <view class="portrait-box">
+                <image src="/public/img/user/touxian.jpg" alt="" class="portrait"></image>
+            </view>
+        </view>
+        <view>
+            <view class="userInfo-box">
+                <view class="user-name">
+                    <view>
+                        AreaLiang
+                        <uni-icons type="right" size="15"></uni-icons>
+                    </view>
+                    <view class="apply-certification">
+                        申请认证
+                    </view>
+                </view>
+                <view class="notice-box">
+                    <view class="toutiao notice-item">
+                        <span class="title">头条</span>
+                        <span class="num">2</span>
+                    </view>
+                    <view class="guanzhu notice-item">
+                        <span class="title">关注</span>
+                        <span class="num">0</span>
+                    </view>
+                    <view class="fenshi notice-item">
+                        <span class="title">粉丝</span>
+                        <span class="num">20470</span>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="item-box">
+        <scroll-view scroll-y="true" class="scroll-Y" style="height: 100%;">
+            <ul class="common">
+                <li wx:for="{{commonFunctions}}" wx:key="index">
+                    <view class="grid-item-box" style="padding: 5px;">
+                        <mp-icon class="icon" icon="{{item.icon}}" ></mp-icon>
+                        <span class="text">{{item.name}}</span>
+                    </view>
+                </li>
+            </ul>
+
+            <ul class="more">
+                <li wx:for="{{moreFunctions}}" wx:key="index">
+                    <view class="grid-item-box" style="padding: 5px;">
+                        <mp-icon class="icon" icon="{{item.icon}}" ></mp-icon>
+                        <span class="text">{{item.name}}</span>
+                    </view>
+                </li>
+            </ul>
+        </scroll-view>
+    </view>
+</view>

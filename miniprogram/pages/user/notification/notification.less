@@ -1,0 +1,52 @@
+/* pages/user/notification/notification.wxss */
+
+.notification {
+    .portrait {
+        .p_img {
+            width: 13vw;
+            height: 13vw;
+            border-radius: 50%;
+        }
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        padding-top: 10px;
+        border-top: 1px solid #e7e7e7;
+        color: #303030;
+    }
+    .user-info {
+        display: flex;
+
+        view {
+            margin: 5px;
+        }
+        .mr{
+            display: block;
+            margin: 3px 0;
+            text-align: left;
+        }
+    }
+
+    .comment {
+        height: 100%;
+        width: 200rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
+
+    .like {
+        color: #4886c7;
+        border-radius: 8px;
+        padding: 5px 10px;
+        background-color: #f7f7f7;
+        margin-top: 8px;
+    }
+    .name{
+        font-weight: 600;
+    }
+}
