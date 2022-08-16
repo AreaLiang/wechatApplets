@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <!-- 搜索框 -->
-<search></search>
+<search showSearchPage="true"></search>
 
 <!-- 内容列表 -->
 <view class="content">

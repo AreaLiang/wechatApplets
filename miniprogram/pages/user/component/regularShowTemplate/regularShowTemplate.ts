@@ -7,6 +7,10 @@ Component({
         list:{
             type:Object,
             value:{}
+        },
+        textRed:{
+            type:Boolean,
+            value:false
         }
     },
 

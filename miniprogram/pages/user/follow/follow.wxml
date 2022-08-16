@@ -1,6 +1,6 @@
 <!--pages/user/follow/follow.wxml-->
 <view class="follow">
-    <view class="list" wx:for="{{followList}}">
+    <view class="list" wx:for="{{followList}}" wx:key="index">
         <view>
             <view class="user-info">
                 <view class="portrait">
@@ -13,10 +13,8 @@
                 </view>
             </view>
         </view>
-        <view>
-            <view class="status">
-                <p>已关注</p>
-            </view>
+        <view class="status">
+            <p>已关注</p>
         </view>
     </view>
 </view>

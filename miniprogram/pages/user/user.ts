@@ -8,22 +8,22 @@ Page({
         commonFunctions: [{
             name: "关注",
             icon: "like",
-            url: "src/pages/index/User/Follow",
+            url: "./follow/follow",
         },
         {
             name: "消息通知",
             icon: "bellring-on",
-            url: "src/pages/index/User/Notification",
+            url: "./notification/notification",
         },
         {
             name: "收藏",
             icon: "star",
-            url: "src/pages/index/User/GatherPage?index=0&&name=CollectPage",
+            url: "./combinePages/combinePages?index=0",
         },
         {
             name: "浏览历史",
             icon: "time",
-            url: "src/pages/index/User/GatherPage?index=3&&name=HistoryRecord",
+            url: "./combinePages/combinePages?index=3",
         },
         {
             name: "钱包",
@@ -59,7 +59,7 @@ Page({
         {
             name: "评论",
             icon: "comment",
-            url: "src/pages/index/User/GatherPage?index=1&&name=Comment",
+            url: "./combinePages/combinePages?index=1",
         },
         {
             name: "点赞",

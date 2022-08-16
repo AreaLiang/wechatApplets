@@ -1,0 +1,3 @@
+<!--pages/user/collect/collect.wxml-->
+<!-- 收藏页面 -->
+<regularShowTemplate list="{{list}}" ></regularShowTemplate>

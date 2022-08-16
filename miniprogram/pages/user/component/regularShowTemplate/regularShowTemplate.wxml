@@ -1,5 +1,5 @@
 <!--component/regularShowTemplate/regularShowTemplate.wxml-->
-<view class="wrap" wx:for="{{list}}">
+<view class="wrap" wx:for="{{list}}" wx:key="index">
     <view class="info">
         <view class="portrait">
             <image class="p_img" src="{{item.portraitUrl}}"></image>
@@ -25,5 +25,5 @@
     </view>
 
     <!-- 底部互动栏 -->
-    <interactive></interactive>
+    <interactive repost="{{item.repostNum}}"  comment="{{item.commentNum}}"  like="{{item.likeNum}}" textRed="{{textRed}}"></interactive>
 </view>

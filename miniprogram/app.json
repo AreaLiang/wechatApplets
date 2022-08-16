@@ -1,11 +1,11 @@
 {
     "pages": [
+        "pages/home/home",
+        "pages/user/user",
         "pages/user/combinePages/combinePages",
         "pages/user/notification/notification",
         "pages/user/follow/follow",
-        "pages/user/user",
         "pages/hotList/hotList",
-        "pages/home/home",
         "pages/login/index",
         "pages/loginType/loginType",
         "pages/video/video"

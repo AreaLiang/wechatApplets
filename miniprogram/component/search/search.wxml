@@ -1,6 +1,47 @@
 <!--component/search/search.wxml-->
-<view class="search_input" >
-        <navigator url="/pages/search/search" open-type="navigate" class="navigator">
-       <text class="iconfont icon-guanbi"></text> 搜索
-        </navigator>
+<view class="search_input">
+    <navigator url="/pages/search/search" open-type="navigate" class="navigator" bindtap="open">
+        <text class="iconfont icon-guanbi"></text> 搜索
+    </navigator>
 </view>
+
+<page-container show="{{showPage}}" overlay="{{true}}" close-on-slideDown="{{true}}" bind:enter="enter" bind:afterleave="afterleave">
+    <view style="height: 100vh;">
+        <view class="top">
+            <view class="searchBox">
+                <text class="iconfont icon-sousuo"></text>
+                <input class="weui-input search-input" model:value="{{searchValue}}" bindconfirm="submitSearch" auto-focus placeholder="汶川地震那天你在干什么" />
+            </view>
+            <view class="cancle">
+                <text bindtap="exitedSearch">取消</text>
+            </view>
+        </view>
+        <view class="main">
+            <view class="row-box h_top">
+                <span>人民币对美元汇率</span>
+                <span>广东今夜雨势将明显</span>
+            </view>
+            <!-- 历史记录和热门推荐 -->
+            <view class="row-box" wx:for="{{record}}" wx:key="index">
+                <view>
+                    <view>
+                        <p class="title">{{item.title}}</p>
+                    </view>
+                </view>
+                <view class="record-item">
+                    <block wx:for="{{item.data}}" wx:for-item="p" wx:for-index="i" wx:key="i">
+                        <view class="item col-11">
+                            <span bindtap="switchRecord" data-value="{{p.name}}">{{p.name}}</span>
+                            <view wx:if="{{p.status}}" style="text-align: right;">
+                                <text class="iconfont icon-hot-fill" style="color: red;font-size: 32rpx;"></text>
+                            </view>
+                        </view>
+                        <view wx:if="{{p.icon}}" class="item item-icon col-2">
+                            <text class="iconfont icon-vertical_line"></text>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</page-container>

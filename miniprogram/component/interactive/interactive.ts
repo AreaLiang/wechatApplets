@@ -15,6 +15,10 @@ Component({
         like:{
             type:String,
             value:'点赞'
+        },
+        textRed:{
+            type:Boolean,
+            value:false
         }
     },
 

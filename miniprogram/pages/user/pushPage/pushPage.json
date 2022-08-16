@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "regularShowTemplate":"../component/regularShowTemplate/regularShowTemplate"
+    }
+}

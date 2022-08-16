@@ -1,0 +1,3 @@
+<!--pages/user/comment/comment.wxml-->
+<!-- 评论页面 -->
+<regularShowTemplate list="{{list}}" textRed='true'></regularShowTemplate>

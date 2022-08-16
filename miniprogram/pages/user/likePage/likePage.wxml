@@ -1,0 +1,2 @@
+<!--pages/user/likePage/likePage.wxml-->
+<regularShowTemplate list="{{list}}" ></regularShowTemplate>

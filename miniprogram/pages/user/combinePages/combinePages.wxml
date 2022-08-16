@@ -1,11 +1,13 @@
 <!--pages/user/combinePages/combinePages.wxml-->
 <view class="title-list">
     <view class="title-item" wx:for="{{titleList}}" wx:key="index">
-        <navigator url="#">
-            <span class="{{actIndex==index ? 'active':'' }}">{{item.name}}</span>
-        </navigator>
+        <span bindtap="switchNav" data-index="{{index}}" class="{{actIndex==index ? 'active':'' }}">{{item.name}}</span>
     </view>
 </view>
 <view class="main">
-   <history></history>
+   <history wx:if="{{actIndex==0}}"></history>
+   <comment wx:if="{{actIndex==1}}"></comment>
+   <likePage wx:if="{{actIndex==2}}"></likePage>
+   <collect wx:if="{{actIndex==3}}"></collect>
+   <pushPage wx:if="{{actIndex==4}}"></pushPage>
 </view>

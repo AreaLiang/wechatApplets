@@ -1,6 +1,10 @@
 {
     "usingComponents": {
-        "history":"../history/history"
+        "history":"../history/history",
+        "collect":"../collect/collect",
+        "comment":"../comment/comment",
+        "likePage":"../likePage/likePage",
+        "pushPage":"../pushPage/pushPage"
     },
     "navigationBarTitleText":""
 }

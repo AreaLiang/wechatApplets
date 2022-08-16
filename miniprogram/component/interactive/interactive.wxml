@@ -15,8 +15,8 @@
     </view>
     <view class="item">
         <view>
-            <mp-icon class="icon" icon="like" size="{{20}}"></mp-icon>
+            <mp-icon class="icon" color="{{textRed?'#d90707':'black'}}" icon="like" size="{{20}}"></mp-icon>
         </view>
-        <view>{{like}}</view>
+        <view class="{{textRed?'red':''}}">{{like}}</view>
     </view>
 </view>

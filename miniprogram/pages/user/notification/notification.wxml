@@ -1,9 +1,8 @@
 <!--pages/user/notification/notification.wxml-->
 <view class="notification">
-    <view class="list" wx:for="{{messageList}}">
+    <view class="list" wx:for="{{messageList}}" wx:key="index">
         <view>
             <view class="user-info">
-
                 <block wx:if="{{item.type!='notice'}}">
                     <view class="portrait">
                         <image src="{{item.portraitUrl}}" class="p_img"></image>

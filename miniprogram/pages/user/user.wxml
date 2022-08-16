@@ -38,19 +38,23 @@
         <scroll-view scroll-y="true" class="scroll-Y" style="height: 100%;">
             <ul class="common">
                 <li wx:for="{{commonFunctions}}" wx:key="index">
-                    <view class="grid-item-box" style="padding: 5px;">
-                        <mp-icon class="icon" icon="{{item.icon}}" ></mp-icon>
-                        <span class="text">{{item.name}}</span>
-                    </view>
+                    <navigator url="{{item.url}}">
+                        <view class="grid-item-box" style="padding: 5px;">
+                            <mp-icon class="icon" icon="{{item.icon}}"></mp-icon>
+                            <span class="text">{{item.name}}</span>
+                        </view>
+                    </navigator>
                 </li>
             </ul>
 
             <ul class="more">
                 <li wx:for="{{moreFunctions}}" wx:key="index">
-                    <view class="grid-item-box" style="padding: 5px;">
-                        <mp-icon class="icon" icon="{{item.icon}}" ></mp-icon>
-                        <span class="text">{{item.name}}</span>
-                    </view>
+                    <navigator url="{{item.url}}">
+                        <view class="grid-item-box" style="padding: 5px;">
+                            <mp-icon class="icon" icon="{{item.icon}}"></mp-icon>
+                            <span class="text">{{item.name}}</span>
+                        </view>
+                    </navigator>
                 </li>
             </ul>
         </scroll-view>

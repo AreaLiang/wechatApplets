@@ -8,41 +8,37 @@ Page({
         titleList: [{
             name: '收藏',
             componentName: 'CollectPage',
-            url: 'src/pages/index/User/GatherPage?index=0&&name=CollectPage'
         },
         {
             name: '评论',
             componentName: 'Comment',
-            url: 'src/pages/index/User/GatherPage?index=1&&name=Comment'
         },
         {
             name: '点赞',
             componentName: 'LikePage',
-            url: 'src/pages/index/User/GatherPage?index=2&&name=LikePage'
         },
         {
             name: '历史',
             componentName: 'HistoryRecord',
-            url: 'src/pages/index/User/GatherPage?index=3&&name=HistoryRecord'
         },
         {
             name: '推送',
             componentName: 'PushPage',
-            url: 'src/pages/index/User/GatherPage?index=4&&name=PushPage'
-        },
-        {
-            name: '举报',
-            componentName: 'ReportPage',
-            url: 'src/pages/index/User/GatherPage?index=5&&name=ReportPage'
         }],
         actIndex: 1
     },
-
+    switchNav(e:any){
+        this.setData({
+            actIndex:e.currentTarget.dataset.index
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad() {
-
+    onLoad(option) {
+        this.setData({
+            actIndex:option.index
+        })
     },
 
     /**
